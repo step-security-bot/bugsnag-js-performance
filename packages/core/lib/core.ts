@@ -71,6 +71,11 @@ export function createClient<S extends CoreSchema, C extends Configuration, T> (
 
   return {
     start: (config: C | string) => {
+      // sendPayloadChecksums is false by default unless custom endpoints are not specified
+      if (typeof config !== 'string' && !config.endpoint) {
+        config.sendPayloadChecksums = 'sendPayloadChecksums' in config ? config.sendPayloadChecksums : true
+      }
+
       const configuration = validateConfig<S, C>(config, options.schema)
 
       // if using the default endpoint add the API key as a subdomain
@@ -92,7 +97,7 @@ export function createClient<S extends CoreSchema, C extends Configuration, T> (
         }
       }
 
-      const delivery = options.deliveryFactory(configuration.endpoint)
+      const delivery = options.deliveryFactory(configuration.endpoint, configuration.sendPayloadChecksums)
 
       options.spanAttributesSource.configure(configuration)
 
