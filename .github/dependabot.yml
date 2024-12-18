@@ -1,0 +1,241 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /examples/react-navigation/android-fragments
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /examples/rn072
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /examples/rn072
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/angular
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/core
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/delivery-fetch
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/platforms/browser
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/platforms/react-native
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/plugin-react-native-navigation
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/plugin-react-navigation
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/react-router
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/request-tracker
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/test-utilities
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/vue-router
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /test/browser
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/angular
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/batch-max-limit
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/batch-timeout
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/connection-failure
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/custom-attributes
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/empty-batch
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/enabled-release-stages-disabled
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/enabled-release-stages
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/error-correlation
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/fixed-sampling-probability
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/manual-span
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/navigation-changes
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/nested-spans
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/network-span-control
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/network-spans
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/oldest-batch-removed
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/one-span-per-trace
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/page-load-spans
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/pre-start-spans
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/react-router
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/resource-load-spans
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/retry-scenario
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/route-change-spans
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/trace-propagation
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/traceparent-meta
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/browser/features/fixtures/packages/vue-router
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /test/react-native
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /test/react-native/features/fixtures/app
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/react-native/features/fixtures/scenario-launcher
+    schedule:
+      interval: daily
