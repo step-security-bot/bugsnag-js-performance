@@ -35,6 +35,11 @@ jobs:
       code-coverage: ${{ steps.code-coverage.outputs.result }}
 
     steps:
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
+        with:
+          egress-policy: audit
+
       - uses: actions/checkout@85e6279cec87321a52edac9c87bce653a07cf6c2 # v3.6.0
         with:
           ref: ${{ inputs.ref }}
